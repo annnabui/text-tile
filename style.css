@@ -1,0 +1,23 @@
+html {
+    margin: 2em;
+    font-size: 1.5em;
+    background-color: #F26E2F;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2em;
+}
+
+.flex-box > * {
+    flex-basis: 50vw;
+}
+
+p {
+    margin: 0;
+}
+
+.indent p {
+    text-indent: 2em;
+}
