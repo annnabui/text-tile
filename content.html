@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEXT/TILE</title>
+
+    <link rel="stylesheet" href="content-style.css">
+    <script src="sketch.js"></script>
+</head>
+<body>
+    <div class="flex-box">
+        <div class="column col1">
+            <div><a href="./index.html">
+                TEXT/TILE<br>
+                <div class="indent">
+                    <p>Parsons School of Design</p>
+                    <p>Communication Design Thesis</p>
+                    <p>Phuong Anh (Anna) Bui</p>
+                </div></a>
+            </div><br><br>
+            <div class="toc">
+                TABLE OF CONTENTS
+                <div class="indent">
+                    <p class="c1">Chapter 1: Objects of Violence</p>
+                    <p class="c2">Chapter 2: Thesis Statement</p>
+                    <p class="c3">Chapter 3: Vietnamese Tiles</p>
+                    <div class="more-indent">
+                        <p>Mini 1.1</p>
+                        <p>Mini 1.2</p>
+                        <p class="exp1">Experiment 1</p>
+                        <p>Seed A</p>
+                        <p>Seed B</p>
+                    </div>
+                </div>
+                <div class="indent">
+                    <p>Chapter 4: NYC Subway Tiles</p>
+                    <div class="more-indent">
+                        <p>Experiment 2</p>
+                        <p>Seed C</p>
+                    </div>
+                </div>
+                <div class="indent">
+                    <p>Chapter 5: Anti-aliased Knitting</p>
+                    <div class="more-indent">
+                        <p>Mini 3.1</p>
+                        <p>Mini 3.2</p>
+                        <p>Mini 3.3</p>
+                        <p>Experiment 3</p>
+                    </div>
+                </div>
+                <div class="indent">
+                    <p>Chapter 6: Final Thought</p>
+                    <p>Bibliography</p>
+                </div>
+            </div>
+        </div>
+        <div class="main-content col2">
+            CHAPTER 3<br>
+            EXPERIMENT 1<br><br>
+            SELF-GENERATION IN MULTIPLICITIES<br><br><br>
+            It is crucial to remember that this project began from observing tiles as a feature of post-French colonial architecture throughout Vietnam, hence, an investigation into encaustic tile isn’t complete until it is considered in its environmental context––they’re not just decorative elements but active participants in the built environment, engaging with the people who move across them. Material-wise, the porous nature of cement traps air, making encaustic tiles surprisingly vocal and playful underfoot. <br><br>
+            Hence, the final experiment manifests as a self-generating set of tile patterns that dynamically respond to their environment, symbolizing the reclamation and revitalization of these designs. This adaptability ensures their continued relevance, even amidst shifting political landscapes.<br><br>
+            I made a floor TouchDesigner projection, inspired by elekktronaut’s tutorial on YouTube, to generate tile patterns using only two shapes––a square and a circle––with the patterns responsive to the sound of external footsteps.<sup>17</sup> <br><br>
+            I used two layers: a 2×2 grid of circles (to highlight fourfold symmetry) and a 45°-rotated square (to simulate diagonal bilateral symmetry), controlling the blending modes between these layers to create different patterns.<sup>17</sup> <br><br>
+            There are 46 blending modes in TouchDesigner, but realistically, I shouldn’t be expecting 46 different outcomes since a few of these blending modes return similar results. I connected the blending-mode cycling mechanism in my TouchDesigner file to my laptop’s microphone, allowing the cycles to respond dynamically to environmental sound amplitudes. This way, the visuals echo the sensory experience of walking on these tiles in real life.<br><br>
+            Although previous mini-experiments were done in p5js, I figured TouchDesigner was more convenient for a generative project. If this was to live on p5js, I would have had to use a much stronger computer than my Macbook Air M1 for the program to run motion, much less computing generative patterns. <br><br>
+            Here are some patterns it generated based on the list of TouchDesigner blending modes:<br><br>
+            A version where the circle grid remains static while the rotated square sits on top. You can see that in this version, the circle motif are much more prominent across all blending modes compared to the first option. It seems as though whichever layer comes last will manifest stronger in the final form. There are also more whole shapes showing compared to version (1).<br><br>
+            A stripped-down version with only a normal square and a normal circle, reducing the design to its most fundamental elements. The patterns arised from this formula is quite monotonous and repetitive in design, mainly due to the lack of rotational variations between a square and a circle.
+        </div>
+        <div class="img-n-ref col1">
+            <img src="./imgs/t1.png" width="100%">
+            <br><br><br><br>
+            <div class="ref">
+                17. Bileam Tschepe,“Dynamic Texture Grids – Touch Designer Tutorial 62,”YouTube, 20 Mar 2023, <a href="https://www.youtube.com/watch?v=Eq5amV7obwg">https://www.youtube.com/watch?v=Eq5amV7obwg</a>.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

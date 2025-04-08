@@ -1,0 +1,69 @@
+html {
+    background-color: white;
+    margin: 2em;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: row;
+    column-gap: 4em;
+}
+
+.flex-box .col1 {
+    flex-basis: 25vw;
+}
+
+.flex-box .col2 {
+    flex-basis: 50vw;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    color: #C9C9C9;
+}
+
+p {
+    margin: 0;
+}
+
+.indent p {
+    text-indent: 2em;
+}
+
+.more-indent p {
+    text-indent: 4em;
+}
+
+.ref {
+    font-size: .625em;
+    color: #C9C9C9;
+}
+
+.c3 {
+    color: #F26E2F;
+}
+
+.exp1 {
+    color: #F26E2F;
+}
+
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    color: #C9C9C9;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+a:focus{
+    text-decoration: none;
+}
+a:active{
+    text-decoration: none;
+}
